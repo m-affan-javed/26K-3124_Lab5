@@ -1,0 +1,105 @@
+#include<stdio.h>
+int main()
+{
+	int choice, inquiry, withdraw, deposit, amount, accNum, pin, prevPin, newPin, tranPin;
+	printf("Enter \n.1 for inquiry\n.2 for cash withdrawal\n.3 for cash deposit\n.4 for PIN change\n ");
+	scanf("%d",&choice);
+	switch(choice){
+		case 1:
+			printf("Enter \n.1 for saving account balance\n.2 for current account balance\n.3 for Account Statement\n");
+			scanf(" %d",&inquiry);
+			switch(inquiry){
+				case 1:
+					printf("Your Savings Account Balance is: Rs. XXXXX");
+					break;
+				case 2:
+					printf("Your Current Account Balance is: Rs. XXXXX");
+					break;
+				case 3:
+					printf("Your account Statement is being printed...");
+					break;
+				default:
+					printf("Invalid entry");
+					break;
+			}
+			break;
+		case 2:
+			printf("Enter \n.1 for current account\n.2 for saving account\n");
+			scanf("%d",&withdraw);
+			switch(withdraw){
+				case 1:
+					printf("Enter amount you want to withdraw: ");
+					scanf("%d",&amount);
+					printf("Rs %d is withdrawed from your current account",amount);
+					break;
+				case 2:
+					printf("Enter amount you want to withdraw: ");
+					scanf("%d",&amount);
+					printf("Rs %d is withdrawed from your saving account",amount);
+					break;
+				default:
+				printf("Invalid entry");
+				break;
+			}
+			break;
+		case 3:
+			printf("Enter \n.1 for Cash deposit to your saving account\n");
+			printf(".2 for cash deposit to your current account\n");
+			printf(".3 for cheque deposit\n");
+			printf(".4 for Deposit to another account\n");
+			scanf("%d",&deposit);
+			switch(deposit){
+				case 1:
+					printf("Enter amount you want to deposit: ");
+					scanf("%d",&amount);
+					printf("Rs %d is deposit to your current account",amount);
+					break;
+				case 2:
+					printf("Enter amount you want to deposit: ");
+					scanf("%d",&amount);
+					printf("Rs %d is deposit to your saving account",amount);
+					break;
+				case 3:
+					printf("Insert your cheque");
+					break;
+				case 4:
+					printf("Enter the account number you want to deposit: ");
+					scanf("%d",&accNum);
+					printf("Enter amount you want to deposit: ");
+					scanf("%d" ,& amount);
+					printf("Rs %d is deposit to account %d", amount, accNum);
+					break;
+				default:
+				printf("Invalid entry");
+				break;
+			}
+			break;
+		case 4:
+			printf("Enter \n.1 to change ATM PIN\n");
+			printf(".2 to change transaction PIN\n");
+			scanf("%d",&pin);
+			switch(pin){
+				case 1:
+					printf("Enter your previous ATM pin: ");
+					scanf(" %d", &prevPin);
+					printf("Enter your new ATM pin: ");
+					scanf("%d", &newPin);					
+					printf("Your new ATM pin is set");
+			 		break;
+				case 2:
+					printf("Enter your previous transaction pin: ");
+					scanf("%d",&tranPin);
+					printf("Enter your new transaction pin: ");
+					scanf("%d",&tranPin);
+					printf("Your new transaction pin is set");
+					break;
+				default:
+					printf("Invalid entry");
+					break;
+				}
+			break;
+		default:
+				printf("Invalid entry");
+				break;
+		}
+}
