@@ -1,0 +1,81 @@
+#include<stdio.h>
+int main(){
+	int department, section;
+	printf("Enter your department:\n");
+	printf("1. Computer Science\n");
+	printf("2. Information Technology\n");
+	printf("3. Artificial Intelligence\n");
+	scanf(" %d",&department);
+	switch(department)
+	{
+		case 1:
+			printf("What is your section\n");
+			printf("1. Section A\n");
+			printf("2. Section B\n");
+			printf("3. Section C\n");
+			scanf(" %d",&section);
+			switch(section)
+			{
+				case 1:
+					printf("Your department is Computer Science and your section is A");
+					break;
+				case 2:
+					printf("Your department is Computer Science and your section is B");
+					break;	
+				case 3:
+					printf("Your department is Computer Science and your section is C");
+					break;
+				default:
+					printf("Section does not exists");
+					break;
+			}
+			break;
+		case 2:
+			printf("What is your section\n");
+			printf("1. Section A\n");
+			printf("2. Section B\n");
+			printf("3. Section C\n");
+			scanf(" %d",&section);
+			switch(section)
+			{
+				case 1:
+					printf("Your department is Information Technology and your section is A");
+					break;
+				case 2:
+					printf("Your department is Information Technology and your section is B");
+					break;	
+				case 3:
+					printf("Your department is Information Technology and your section is C");
+					break;
+				default:
+					printf("Section does not exists");
+					break;
+			}
+			break;
+		case 3:
+			printf("What is your section\n");
+			printf("1. Section A\n");
+			printf("2. Section B\n");
+			printf("3. Section C\n");
+			scanf(" %d",&section);
+			switch(section)
+			{
+				case 1:
+					printf("Your department is Artificial Inteligence and your section is A");
+					break;
+				case 2:
+					printf("Your department is Artificial Inteligence and your section is B");
+					break;	
+				case 3:
+					printf("Your department is Artificial Inteligence and your section is C");
+					break;
+				default:
+					printf("Section does not exists");
+					break;
+			}
+			break;
+		default:
+			printf("Department does not exists");
+			break;
+	}
+}
