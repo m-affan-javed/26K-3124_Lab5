@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+	int appoint, docAvb, regCom;
+	printf("Does the patient has appointment?\n1.Yes\n0.No\n");
+	scanf("%d",&appoint);
+	if (appoint==1){
+		printf("Is the doctor available?\n1.Yes\n0.No\n");
+		scanf("%d",&docAvb);
+		if (docAvb==1){
+			printf("Is the registeration complete?\n1.Yes\n0.No\n");
+			scanf("%d",&regCom);
+			if (regCom==1)
+			printf("Patient can meet the doctor");
+			else{
+				printf("Patient can not meet the doctor");
+			}	
+		}else{
+			printf("Patient can not meet the doctor");
+		}
+	}else{
+			printf("Patient can not meet the doctor");
+	}
+}
