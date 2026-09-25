@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+	int cnic, test;
+	printf("Do you have CNIC?\n");
+	printf("1. Yes\n");
+	printf("2. No\n");
+	scanf(" %d",&cnic);
+	if (cnic==1){
+		printf("Have you passed your driving test?\n");
+		printf("1. Yes\n");
+		printf("2. No\n");
+		scanf("%d",&test);
+		if (test==1){
+			printf("License Can Be Issued");
+		}else{
+			printf("License Can Not Be Issued");
+		}
+	}else{
+		printf("License Can Not Be Issued");
+	}
+}
