@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+	int open, Avb, bal;
+	printf("Is the restaurant open?\n1.Yes\n0.No\n");
+	scanf("%d",&open);
+	if (open==1){
+		printf("Is the item available?\n1.Yes\n0.No\n");
+		scanf("%d",&Avb);
+		if (Avb==1){
+			printf("Does the customer has sufficient balance?\n1.Yes\n0.No\n");
+			scanf("%d",&bal);
+			if (bal==1)
+			printf("Order placed");
+			else{
+				printf("Insufficient balance");
+			}	
+		}else{
+			printf("Item not available");
+		}
+	}else{
+			printf("Restaurant is closed");
+	}
+}
